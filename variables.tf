@@ -3,3 +3,8 @@
   type        = string
   default     = "Testing-instance"
 }
+
+variable "region" {
+ default     = "us-west-2"
+}
+
