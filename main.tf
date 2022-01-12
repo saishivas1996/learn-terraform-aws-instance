@@ -11,7 +11,7 @@ terraform {
 
 provider "aws" {
   profile = "default"
-  region  = "us-west-2"
+  region  = var.region
 }
 
 resource "aws_instance" "app_server" {
@@ -23,4 +23,8 @@ resource "aws_instance" "app_server" {
     #Name = "ExampleAppServerInstance"
     Name = var.instance_name
   }
+}
+
+output "public-ip" {
+  value = aws_instance.app_server.public_ip
 }
