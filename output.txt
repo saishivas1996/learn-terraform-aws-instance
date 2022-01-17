@@ -1,0 +1,12 @@
+#Commands to start terraform
+terraform init -- ##To Initiate the process
+terraform validate -- ##success! The configuration is valid
+terraform fmt -- ##To allign the flow
+terraform show
+terraform show -json
+terraform providers -- ##list of providers
+terraform output
+terraform refresh
+terraform graph
+terraform plan
+terraform apply
